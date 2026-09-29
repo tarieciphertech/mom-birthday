@@ -1,0 +1,1 @@
+const layer=document.querySelector(".hearts");function heart(){const el=document.createElement("span");el.className="heart";el.style.left=Math.random()*100+"%";el.style.fontSize=(12+Math.random()*18)+"px";el.style.animationDuration=(4+Math.random()*4)+"s";layer.appendChild(el);setTimeout(()=>el.remove(),8000)}setInterval(heart,900);
